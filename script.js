@@ -10,8 +10,6 @@ const ingredients = {
 
 // PART 2
 // select and display randomly selected ingredients for our salad in the "ingredients" section in index.html
-const ingredients_element = document.querySelector("#ingredients");
-
 
 // select random ingredients and store each ingredient in a new object. 
 // to avoid choosing the same ingredient more than once, compare the randomly selected ingredient to ingredients added into the new object. If the ingredient is already present in the new object, a new random ingredient must be selected and stored.
@@ -41,6 +39,21 @@ selectRandomIngredients("vegetable", 3, random_vegetables);
 selectRandomIngredients("meat", 1, random_meat);
 selectRandomIngredients("other", 2, random_other_ingredients);
 
+// display the ingredients from the new objects
+const ingredients_element = document.querySelector("#ingredients");
+
+function displayIngredients(object) {
+    for (const key in object) {
+        if (key) {
+            ingredients_element.innerHTML += `<p>${key}</p>`;
+        }
+    }
+}
+
+displayIngredients(random_fruit);
+displayIngredients(random_vegetables);
+displayIngredients(random_meat);
+displayIngredients(random_other_ingredients);
 
 // PART 3
 // select and display a random background image for our salad page
