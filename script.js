@@ -7,6 +7,7 @@ const ingredients = {
     other: ["basil", "chives", "parsley", "wild rocket", "baby spinach", "feta", "mozarella", "romaine", "dried cranberries", "pecan halves", "poppy seeds", "onion flakes"],
 };
 
+
 // PART 2
 // select and display randomly selected ingredients for our salad in the "ingredients" section in index.html
 const ingredients_element = document.querySelector("#ingredients");
@@ -39,3 +40,12 @@ selectRandomIngredients("fruit", 1, random_fruit);
 selectRandomIngredients("vegetable", 3, random_vegetables);
 selectRandomIngredients("meat", 1, random_meat);
 selectRandomIngredients("other", 2, random_other_ingredients);
+
+
+// PART 3
+// select and display a random background image for our salad page
+function randomImgNumber(num) {
+    return Math.floor(Math.random() * num + 1);
+};
+
+document.body.style.backgroundImage = `url("./images/salad_${randomImgNumber(4)}.jpg")`;
