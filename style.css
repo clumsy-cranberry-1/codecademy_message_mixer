@@ -1,0 +1,70 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+	margin: 0.75rem 0;
+}
+
+#title {
+	/* font-family: "Allura", cursive; */
+	font-family: "Shalimar", cursive;
+	font-size: clamp(4rem, 10vmax, 8rem );
+	letter-spacing: 0.5vw;
+	color: #ffffff;
+	
+	text-align: center;
+	text-shadow: 0 0 0.25rem #333333;
+	
+	margin-bottom: 1.5rem;
+}
+
+#ingredients {
+	/* font-family: "Allura", cursive; */
+	font-family: "Shalimar", cursive;
+	font-size: calc(1.5rem + 1vw);
+
+	border-radius: 1rem;
+	background-color: #ffffff;
+	opacity: 0.75;
+	min-height: 60vh;
+	width: 60%;
+
+	/* center contents of section using flexbox*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.bg {
+	/* background-image: url(); */
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+	background-color: #ffffff;
+}
