@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -30,22 +30,20 @@ p {
 }
 
 #title {
-	/* font-family: "Allura", cursive; */
-	font-family: "Shalimar", cursive;
-	font-size: clamp(4rem, 10vmax, 8rem );
+	font-family: "Indie Flower", cursive;
+	font-size: clamp(3rem, 8vw, 5.5rem );
 	letter-spacing: 0.5vw;
 	color: #ffffff;
 	
 	text-align: center;
-	text-shadow: 0 0 0.25rem #333333;
+	text-shadow: 0 0 0.5rem #222;
 	
 	margin-bottom: 1.5rem;
 }
 
 #ingredients {
-	/* font-family: "Allura", cursive; */
-	font-family: "Shalimar", cursive;
-	font-size: calc(1.5rem + 1vw);
+	font-family: "Indie Flower", cursive;
+	font-size: calc(1.25rem + 0.75vw);
 
 	border-radius: 1rem;
 	background-color: #ffffff;
